@@ -1,0 +1,62 @@
+# =========================================================================
+# Common Root .gitignore for Spring Boot Microservices Repository
+# =========================================================================
+
+# Ignore application configuration files (contains DB passwords & sensitive info)
+**/src/main/resources/application.properties
+**/src/main/resources/application.yml
+**/src/main/resources/application.yaml
+**/src/main/resources/application-*.properties
+**/src/main/resources/application-*.yml
+**/src/main/resources/application-*.yaml
+application.properties
+application.yml
+application.yaml
+
+# Compiled Java output & build target directories
+target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA project files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse & Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# VS Code project files
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build/
+**/build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Logs & temporary files
+*.log
+*.tmp
+temp/
